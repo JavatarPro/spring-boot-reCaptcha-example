@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="US-ASCII">
+    <title>reCaptcha example</title>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+
+<form action="/" method="post">
+    <div class="g-recaptcha" th:attr="data-sitekey=${siteKey}"></div>
+    <input type="submit" value="Submit">
+</form>
+
+<div style="font-size: 20px; color: blue" th:if="${captchaStatus}" th:text="${captchaStatus}"></div>
+</body>
+</html>

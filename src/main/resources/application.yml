@@ -1,0 +1,11 @@
+recaptcha:
+  secretKey: PLACE_HERE_SECRET_KEY
+  siteKey: PLACE_HERE_SITE_KEY
+
+server:
+  port: 8099
+
+spring:
+  application:
+    name: captcha-example
+
